@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Note</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+ <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+  <div class="dropdown">
+    <i class="fas fa-bars"> </i><span><b>Note</b></span>
+    <div class="dropdown-content">
+      <a href="#note-form">Notes</a>
+      <a href="#clear-notes">Clear All notes</a>
+      <a href="#">Add notes</a>
+      </div>
+  </div>
+ 
+  <div id ="add-note">
+    <form id="note-form">
+      <label for="note-title">Title:</label>
+      <input type="text" id="note-title" name="title" placeholder="Enter note title ">
+      <label for="note-content">Note</label>
+      <textarea id="note-content" name="content" rows="5" placeholder="Write your note here..."></textarea>
+      <button type="submit">done</button>
+    </form>
+  </div>
+  <div class="notes-container">
+    <ul id="notes-list">
+      <li class="note-item" data-note-id="unique-note-id-1">
+        <span class="note-title">Note Title 1</span>
+        <span class="note-content">This is the content of note 1.</span>
+      </li>
+      <li class="note-item" data-note-id="unique-note-id-2">
+        </li>
+    </ul>
+  </div>
+  
+  
+  <div class="add-note-container">
+    <i class="fas fa-plus"></i> </div>
+    <button id="clear-notes">Clear All Notes</button>
+    <script src="script.js"></script>
+</body>
+</html>
